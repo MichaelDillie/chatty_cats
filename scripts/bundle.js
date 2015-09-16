@@ -10,10 +10,12 @@ $(document).ready(function () {
     var $userName = $('#user-name');
     var $form = $('#form');
     var $chatField = $('#chat-field');
+    var $purrify = $('#purr');
 
     $form.submit(function (e) {
         e.preventDefault();
-
+        var audio = new Audio('../Audio/Meow-sound-effect.mp3');
+        audio.play();
         var newChatMessage = $textBox.val();
         var newUserName = $userName.val();
 
@@ -27,12 +29,24 @@ $(document).ready(function () {
     setInterval(function () {
         $.get('http://tiyfe.herokuapp.com/collections/chattycats', function (response) {
             $chatField.html('');
-            response.reverse();
+            // response.reverse()
             for (var i = 0; i < response.length; i++) {
                 $chatField.append('<div>' + response[i].user + ': ' + response[i].post + '</div>');
             }
         }, 'json');
     }, 2000);
+
+    function onGetCollectionRecords(response) {
+        response.forEach(function (record) {
+            var url = 'http://tiyfe.herokuapp.com/collections/chattycats';
+            console.log(url);
+            $.ajax({
+                url: url,
+                method: 'DELETE'
+            });
+        });
+    }
+    $purrify.click(onGetCollectionRecords);
 });
 
 },{}]},{},[1])
