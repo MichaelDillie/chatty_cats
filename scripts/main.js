@@ -17,6 +17,7 @@ $(document).ready(function() {
         audio.play();
         var newChatMessage = $textBox.val();
         var newUserName = $userName.val();
+        $textBox.val('');
 
 
         $.post(
@@ -45,17 +46,6 @@ $(document).ready(function() {
         },
         2000);
 
-    function onGetCollectionRecords(response) {
-		response.forEach(function(record) {
-			var url = 'http://tiyfe.herokuapp.com/collections/chattycats';
-			console.log(url);
-			$.ajax({
-				url: url,
-				method: 'DELETE'
-			});
-		});
-	}
-	$purrify.click(onGetCollectionRecords);
 
 
 

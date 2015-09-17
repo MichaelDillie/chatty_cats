@@ -13,11 +13,36 @@ nav {
     color: #00A9A9;
     font-size: 2em;
     padding-top: .25em;
-    margin-left: 1em; }
+    margin-left: 1em;
+    float: left; }
+  nav #catpic {
+    margin-left: 1%;
+    margin-top: .75em;
+    height: 3em;
+    width: 3em; }
+  nav .wrapper {
+    background-color: transparent;
+    height: 2em;
+    width: 8em;
+    float: right;
+    margin-top: 1.25em;
+    margin-right: 6em; }
+    nav .wrapper a {
+      font-family: 'Pacifico', cursive;
+      color: #00A9A9;
+      font-size: 1em;
+      float: right;
+      margin-right: .5em; }
+    nav .wrapper span {
+      font-family: 'Pacifico', cursive;
+      color: #00A9A9;
+      font-size: 1em;
+      margin-right: .5em;
+      float: right; }
 
 .test {
   height: 4.25em;
-  width: 49.9%;
+  width: 49.7%;
   background-color: #003333;
   position: fixed;
   bottom: 0;
@@ -27,54 +52,59 @@ nav {
     background-color: rgba(102, 255, 153, 0.2);
     margin-top: 2em;
     height: 2em;
-    width: 11em;
-    margin-left: 0.5em;
+    width: 20em;
+    margin-left: 1em;
     border: none;
-    color: white; }
+    color: white;
+    outline: none; }
   .test form #user-name {
     background-color: rgba(102, 255, 153, 0.2);
     margin-top: 2em;
     height: 2em;
-    width: 13em;
-    margin-left: 0.5em;
+    width: 15em;
+    margin-left: .5em;
     border: none;
-    color: white; }
+    color: white;
+    outline: none; }
   .test form button {
     background-color: rgba(102, 255, 153, 0.2);
     margin-top: 2em;
     height: 2em;
-    margin-left: 0.5em;
+    margin-left: .5em;
     border: none;
-    color: white; }
+    color: white;
+    outline: none; }
   .test form #purr {
     background-color: rgba(102, 255, 153, 0.2);
     margin-top: 2em;
     height: 2em;
-    margin-left: 0.5em;
+    margin-left: .5em;
     border: none;
-    color: white; }
+    color: white;
+    outline: none; }
   .test form span {
     font-family: 'Pacifico', cursive;
     color: rgba(62, 149, 149, 0.5);
-    margin-left: .2em; }
+    margin-left: 1em; }
 
 .cat1 {
   height: 50em;
-  width: 24.9%;
+  width: 24.96%;
   background-image: url(http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/8/16/1345113241935/A-very-cute-kitten-008.jpg);
   background-size: contain;
   position: fixed;
   margin-top: 5em;
+  margin-left: .07em;
   float: left; }
 
 .cat2 {
   height: 50em;
-  width: 27%;
+  width: 25.1%;
   background-image: url(http://images4.fanpop.com/image/photos/16000000/Cute-Kitten-kittens-16096139-1280-800.jpg);
   background-size: contain;
   position: fixed;
   margin-top: 5em;
-  margin-left: 75.1%;
+  margin-left: 74.9%;
   float: right; }
 
 #chat-nav {
